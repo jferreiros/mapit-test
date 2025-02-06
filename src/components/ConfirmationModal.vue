@@ -22,7 +22,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "ConfirmationModal",
   emits: ["close"],
-  setup(props, { emit }) {
+  setup(_, { emit }) {
     const confirm = () => {
       emit("close");
     };

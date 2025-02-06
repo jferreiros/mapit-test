@@ -36,9 +36,11 @@ export default defineComponent({
         });
 
         map.on("load", () => {
-          map.resize();
-          map.flyTo({ center: [props.lng, props.lat], zoom: 12 });
-          new mapboxgl.Marker().setLngLat([props.lng, props.lat]).addTo(map);
+          if (map) {
+            map.resize();
+            map.flyTo({ center: [props.lng, props.lat], zoom: 12 });
+            new mapboxgl.Marker().setLngLat([props.lng, props.lat]).addTo(map);
+          }
         });
       }
     });
