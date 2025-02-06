@@ -2,7 +2,7 @@
   <section class="relative">
     <div
       class="h-screen flex items-center justify-center bg-cover bg-center"
-      style="background-image: url('@/assets/hero-image.jpeg')"
+      style="background-image: url('../assets/hero-image.jpeg')"
     >
       <div
         class="bg-black bg-opacity-50 w-full h-full flex flex-col items-center justify-center p-4"
